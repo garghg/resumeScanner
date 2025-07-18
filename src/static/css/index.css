@@ -1,0 +1,109 @@
+/* general sytling for all page contenet; center the whole page */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center vertically */
+    gap: 10px;
+    height: calc(100vh - 100px); /* Full viewport height */
+    margin: 0; /* Optional: remove default margin */
+    font-family: "DM Serif Text", serif;
+    background-color: rgb(7, 49, 99);
+    user-select: none;
+}
+
+/* custom selection colors */
+::selection{
+    background-color: white;
+    color: black;
+}
+
+/* style the heading "Welcome to Resume Scanner" at the top */
+h1{
+    letter-spacing: 0.3rem; /* add letter spacing */
+    color: white;
+    filter: drop-shadow(0px 0px 15px white); /* glow effect on text */
+} 
+
+/* style the general form elements  */
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 1%; 
+    background-color: rgb(4, 40, 84);
+    border: solid 10px white;
+    border-style: double double;
+}
+
+/* style specific parts of the form elements like text */
+#form input, #form textarea{
+    width: calc(100vw/2);
+    resize: none;
+    font-family: "DM Serif Text", serif;
+    overflow: hidden;
+}
+
+
+/* further style only text area */
+#form textarea{
+    background-color: transparent;
+    color: white;
+    border: none;
+    scroll-behavior: smooth;
+    scrollbar-color: white transparent;
+}
+
+/* hide default file upload and overlap with custom button */
+#resume{
+    opacity: 0;
+    pointer-events: none;
+    position: relative;
+    margin-top: -4%;
+    margin-left: 2%;
+}
+
+/* when text area is clicked still hide border and outline but show vertical scroll */
+#form textarea:focus{
+    border: none;
+    outline: none;
+    overflow-y: scroll;
+}
+
+/* add a placeholder text in textarea */
+#form textarea::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* style the custom file upload button */
+.custom-file-upload{
+    display: inline-block;
+    padding: 8px 30px;
+    cursor: pointer;
+    background-color: #444;
+    color: white;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+}
+
+/* style the submit button */
+#submit{
+    padding: 7.5px;
+    font-size: 16px;
+    transition: 0.5s ease-in-out;
+    border: none;
+}
+
+/* style submit on hover */
+#submit:hover{
+    background-color: rgba(5, 117, 255, 0.7);
+    color: white;
+}
+
+/* style file upload on hover */
+.custom-file-upload:hover{
+    color: black;
+    background-color: white;
+}

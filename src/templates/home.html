@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- link to css file -->
+    <link rel="stylesheet" href="../static/css/home.css">
+    <!-- import some google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- set tab title -->
+    <title>Resume Scanner</title>
+</head>
+<body>
+    <div id="scoreAndChart">
+        <!-- page heading -->
+        <h1>Home</h1>
+        <!-- place chart in div for styling -->
+        <div id="chartDiv"><canvas id="myChart"></canvas></div>
+        <!-- display matching resume and job desc score -->
+        <p id="scoreText">Your current resume is a <u id="score">{{score}}%</u> match for this job.</p>
+    </div>
+    <div id="results">
+        <h1 id="kws">Suggested skills to add to resume:</h1>
+        <p id="note"><i>Please note: The model's outputs may occasionally contain inaccuracies or unexpected results.</i></p>
+        <ul id="skill_list">
+            {% for skill in skills %}
+                <li>{{skill}}</li>
+            {%endfor%}
+        </ul>
+        
+    </div>
+</body>
+<!-- import chart js to graph the score -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<!-- pass score into home.js -->
+<script>
+    let score = '{{score}}'
+</script>
+<!-- link to home.js -->
+<script src="../static/js/home.js"></script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link to css file -->
+    <link rel="stylesheet" href="../static/css/index.css">
+    <!-- import some google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <!-- set tab title -->
+    <title>Resume Scanner</title>
+</head>
+<body>
+    <!-- Greet user with a heading -->
+    <h1 class=".dm-serif-text-regular">Welcome to Resume Scanner</h1>
+    <!-- collect user data using a form -->
+    <form  id="form" action="#" method="post" enctype="multipart/form-data">
+        <!-- custom file upload button; label and input are connected by the same "for" and "name" -->
+        <label for="resume" class="custom-file-upload">
+            Upload Resume PDF
+        </label>
+        <input type="file" accept=".pdf" name="resume" id="resume" required>
+        <!-- textarea to enter job description; allows 6 rows before scrolling; soft wrap moves text to next line without adding a \n char -->
+        <textarea name="jobDesc" id="jobDesc" rows="6" cols="40" wrap="soft" placeholder="Enter Job Description Here" required></textarea>
+        <!-- submit the form -->
+        <input type="submit" id="submit">
+    </form>
+</body>
+</html>
