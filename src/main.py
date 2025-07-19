@@ -1,4 +1,4 @@
-# Please run model.py to train your custom NER model before running this. It may take several minutes to train. 
+# Please also run model.py to train your custom NER model if you have issue running the uploaded model. It may take several minutes to train.
 
 from flask import Flask, render_template, request, redirect, session, url_for
 from resume import compare
