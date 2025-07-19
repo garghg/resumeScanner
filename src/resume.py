@@ -6,21 +6,17 @@ import os
 import gdown
 import zipfile
 
+#get my custom trained model from google drive (OR you may choose to train you own and load it)
 MODEL_DIR = "resume_model"
 MODEL_ZIP = "resume_model.zip"
-MODEL_ID = "1q1QL_jVzp87PtNpR426w-hsqqVReshx_"
+MODEL_URL = "https://drive.google.com/file/d/1q1QL_jVzp87PtNpR426w-hsqqVReshx_/view?usp=sharing"
 
 if not os.path.exists(MODEL_DIR):
-    print("Downloading model...")
-    gdown.download(id=MODEL_ID, output=MODEL_ZIP, quiet=False)
-    print("Extracting model...")
+    gdown.download(MODEL_URL, MODEL_ZIP, quiet=False)
     with zipfile.ZipFile(MODEL_ZIP, 'r') as zip_ref:
         zip_ref.extractall(MODEL_DIR)
 
-print("Loading model...")
 nlp = spacy.load(MODEL_DIR)
-print("Model loaded successfully")
-
 
 resume_skills = []
 job_skills = []
