@@ -8,7 +8,7 @@ import zipfile
 
 MODEL_DIR = "resume_model"
 MODEL_ZIP = "resume_model.zip"
-MODEL_ID = "1lo7CBMPslxlzuWCeY9-cCixkeFV6HKrm"
+MODEL_ID = "1q1QL_jVzp87PtNpR426w-hsqqVReshx_"
 
 if not os.path.exists(MODEL_DIR):
     print("Downloading model...")
