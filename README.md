@@ -3,3 +3,6 @@ You can upload your resume and paste a job description. The application will use
 _Please note:_
 - _The model's outputs may occasionally contain inaccuracies or unexpected results._
 - _Please also run model.py to train your custom NER model if you find issue with main.py or running the uploaded model. It may take several minutes to train._
+
+## Set Up
+To install all dependencies, please run the command: `pip install -r requirements.txt`
