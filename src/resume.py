@@ -2,8 +2,20 @@
 import fitz
 import spacy
 from sentence_transformers import SentenceTransformer
+import os
+import gdown
+import zipfile
 
-nlp = spacy.load('resume_model')
+MODEL_DIR = "resume_model"
+MODEL_ZIP = "resume_model.zip"
+MODEL_URL = "https://drive.google.com/file/d/1lo7CBMPslxlzuWCeY9-cCixkeFV6HKrm/view?usp=sharing"
+
+if not os.path.exists(MODEL_DIR):
+    gdown.download(MODEL_URL, MODEL_ZIP, quiet=False)
+    with zipfile.ZipFile(MODEL_ZIP, 'r') as zip_ref:
+        zip_ref.extractall(MODEL_DIR)
+
+nlp = spacy.load(MODEL_DIR)
 
 resume_skills = []
 job_skills = []
