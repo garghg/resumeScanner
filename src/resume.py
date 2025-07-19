@@ -9,7 +9,7 @@ import zipfile
 #get my custom trained model from google drive (OR you may choose to train you own and load it)
 MODEL_DIR = "resume_model"
 MODEL_ZIP = "resume_model.zip"
-MODEL_URL = "https://drive.google.com/file/d/1q1QL_jVzp87PtNpR426w-hsqqVReshx_/view?usp=sharing"
+MODEL_URL = "https://drive.google.com/uc?id=1SGbzUnhp7dEt2mlU1v8HKqGZfLoKvbZ_"
 
 if not os.path.exists(MODEL_DIR):
     gdown.download(MODEL_URL, MODEL_ZIP, quiet=False)
