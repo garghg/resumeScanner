@@ -11,6 +11,10 @@ You can upload your resume and paste a job description. The application will use
 1. Run `pip install -r requirements.txt` to install all dependencies
 2. Run `python main.py`
 
+
+To use the application, simply upload a resume and paste a job description.
+For test purposes, a sample resume is provided in the uploads folder. 
+
 _Please note:_
 - _The model's outputs may occasionally contain inaccuracies or unexpected results._  
 - _Please also run model.py to train your custom NER model if you find issue with main.py or running the uploaded model. It may take several minutes to train._
