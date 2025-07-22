@@ -1,5 +1,5 @@
 #import necessary modules
-import fitz
+import pymupdf as fitz
 import spacy
 from sentence_transformers import SentenceTransformer
 import os
