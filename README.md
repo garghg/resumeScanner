@@ -1,5 +1,8 @@
 # Resume Scanner
-You can upload your resume and paste a job description. The application will use NLP to give you a score on how well your resume matches the job description. It will also use a custom trained NER model to extract skills from both the resume and job. Finally, it will compare them and suggest skills and keywords to add to your resume.
+You can upload your resume and paste a job description. The application will use NLP to give you a score on how well your resume matches the job description. It will also use a custom trained NER model to extract skills from both the resume and job. Finally, it will compare them and suggest skills and keywords to add to your resume.  
+
+<img width="1919" height="959" alt="image" src="https://github.com/user-attachments/assets/cf4509f7-c79b-40f4-a710-7909bf97bba6" />
+
 
 ---
 ## Set Up
