@@ -13,8 +13,14 @@ You can upload your resume and paste a job description. The application will use
 2. **Create venv**: `python -m venv venv`
 3. **Activate venv**: `venv\Scripts\activate`
 4. **Install dependencies**: `pip install -r requirements.txt`
-5. **Run project**: `python main.py`
-6. **Deactivate venv**: `deactivate`
+   If you have issue with requirements.txt, please run the following:
+   1. `pip install flask`
+   2. `pip install pymupdf`
+   3. `pip install spacy`
+   4. `pip install sentence_transformers`
+   5. `pip install gdown`
+6. **Run project**: `python main.py`
+7. **Deactivate venv**: `deactivate`
 
 To use the application, simply upload a resume and paste a job description.
 For test purposes, a sample resume is provided in the uploads folder. 
