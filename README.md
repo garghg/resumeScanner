@@ -8,7 +8,7 @@ You can upload your resume and paste a job description. The application will use
 ---
 ## Set Up
 
-3.  **Clone repo**: `git clone [https://github.com/garghg/learnAI.git](https://github.com/garghg/resumeScanner.git)`
+3.  **Clone repo**: `git clone https://github.com/garghg/resumeScanner.git`
 2. **Create venv**: `python -m venv venv`
 3. **Activate venv**: `venv\Scripts\activate`
 4. **Install dependencies**: `pip install -r requirements.txt`
