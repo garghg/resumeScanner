@@ -1,6 +1,10 @@
 # Resume Scanner
 You can upload your resume and paste a job description. The application will use NLP to give you a score on how well your resume matches the job description. It will also use a custom trained NER model to extract skills from both the resume and job. Finally, it will compare them and suggest skills and keywords to add to your resume.  
 
+
+_Due to some technical issue on git locally, I had to create a second repo. This is a continuation of [resumeReader](https://github.com/garghg/resumeReader). Please check that for past commits._
+
+
 <img width="1919" height="959" alt="image" src="https://github.com/user-attachments/assets/cf4509f7-c79b-40f4-a710-7909bf97bba6" />
 <img width="1918" height="990" alt="image" src="https://github.com/user-attachments/assets/25c1f1ce-2407-4462-84aa-4edb773befe9" />
 
