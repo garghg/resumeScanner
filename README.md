@@ -11,6 +11,7 @@ _Due to some technical issue on git locally, I had to create a second repo. This
 
 ---
 ## Set Up
+You may download and run the executable file [here](https://drive.google.com/uc?export=download&id=1orAgG91R9jNidgf_25DgJmtx3yabhtaX).
 
 3.  **Clone repo**: `git clone https://github.com/garghg/resumeScanner.git`
 4.  Enter the src directory
