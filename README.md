@@ -11,13 +11,14 @@ _Due to some technical issue on git locally, I had to create a second repo. This
 
 ---
 ## Set Up
-You may download and run the executable file [here](https://drive.google.com/uc?export=download&id=1orAgG91R9jNidgf_25DgJmtx3yabhtaX).
+You may download and run the executable file [here](https://drive.google.com/uc?export=download&id=1orAgG91R9jNidgf_25DgJmtx3yabhtaX).  
+OR
 
-3.  **Clone repo**: `git clone https://github.com/garghg/resumeScanner.git`
-4.  Enter the src directory
-2. **Create venv**: `python -m venv venv`
-3. **Activate venv**: `venv\Scripts\activate`
-4. **Install dependencies**: `pip install -r requirements.txt`
+1.  **Clone repo**: `git clone https://github.com/garghg/resumeScanner.git`
+2.  Enter the src directory
+3. **Create venv**: `python -m venv venv`
+4. **Activate venv**: `venv\Scripts\activate`
+5. **Install dependencies**: `pip install -r requirements.txt`
    If you have issue with requirements.txt, please run the following:
    1. `pip install flask`
    2. `pip install pymupdf`
